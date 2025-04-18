@@ -315,6 +315,31 @@ section h2 {
     transform: scale(1.1);
 }
 
+.gallery-item.hidden {
+    display: none;
+}
+
+.gallery-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.see-more-gallery-btn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.see-more-gallery-btn:hover {
+    background: #45a049;
+}
+
 .amenities-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -663,5 +688,211 @@ footer {
     
     .property-image {
         height: 300px;
+    }
+}
+
+.reviews {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.reviews::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(249,249,249,0));
+    z-index: 1;
+}
+
+.reviews::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to top, rgba(255,255,255,1), rgba(249,249,249,0));
+    z-index: 1;
+}
+
+.reviews h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    z-index: 2;
+}
+
+.reviews-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.google-rating {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.google-rating i.fab {
+    color: #4285F4;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.rating {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+.stars {
+    color: #FFB800;
+}
+
+.stars i {
+    margin: 0 2px;
+}
+
+.reviews-slideshow {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background: white;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.review-slide {
+    display: none;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.review-slide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.review-slide:hover img {
+    transform: scale(1.02);
+}
+
+.review-slide.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.review-slide.hidden {
+    display: none;
+}
+
+.prev-review,
+.next-review {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 3;
+}
+
+.prev-review:hover,
+.next-review:hover {
+    background-color: #333;
+    color: white;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev-review {
+    left: 10px;
+}
+
+.next-review {
+    right: 10px;
+}
+
+.review-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.review-dots {
+    display: flex;
+    gap: 10px;
+}
+
+.review-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ddd;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.review-dot.active {
+    background: #333;
+    transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews-slideshow {
+        margin: 0 20px;
+    }
+    
+    .prev-review,
+    .next-review {
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    .google-rating {
+        padding: 10px 20px;
+    }
+    
+    .rating {
+        font-size: 20px;
     }
 } 
