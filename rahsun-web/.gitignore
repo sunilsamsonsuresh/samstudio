@@ -1,0 +1,8 @@
+.env
+.env.local
+.env.*.local
+node_modules/
+package-lock.json
+*.pyc
+__pycache__/
+config.py

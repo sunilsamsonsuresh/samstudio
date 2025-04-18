@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahsun Estates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Rahsun Estates</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 style="font-family: 'Playfair Display', serif;">Rahsun Estates</h1>
+            <p style="font-family: 'Montserrat', sans-serif;">Every moment is cradled by the whispers of the jungle !</p>
+            <a href="#contact" class="cta-button">Book Your Stay</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-overlay">
+                        <h3>Welcome to Rahsun Estates</h3>
+                        <p>Your peaceful retreat nestled in nature. 
+                            Surrounded by lush greenery and the gentle sounds of the forest, 
+                            we offer a tranquil escape from everyday life.</p>
+                        <p>Experience complete relaxation in our serene natural setting</p>
+                        <p>Let the calming environment and our warm hospitality make your stay truly refreshing</p>
+                        <p>Our resort combines modern amenities with traditional hospitality, ensuring every guest enjoys a memorable stay.</p>
+                    </div>
+                </div>
+                <div class="slideshow-container">
+                    <div class="slide">
+                        <img src="images/property_features/viewpoint.jpeg" alt="Viewpoint">
+                        <div class="slide-text">Breathtaking Viewpoints</div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/property_features/waterbody.jpeg" alt="Waterbody">
+                        <div class="slide-text">Serene Water Bodies</div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/property_features/campfire.jpeg" alt="Campfire">
+                        <div class="slide-text">Cozy Campfire Nights</div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/property_features/viewpoint_2.jpeg" alt="Viewpoint 2">
+                        <div class="slide-text">Panoramic Views</div>
+                    </div>
+                    <button class="prev-slide">❮</button>
+                    <button class="next-slide">❯</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="property" class="property">
+        <div class="container">
+            <h2>Explore Our Estate</h2>
+            <div class="property-content">
+                <div class="property-text">
+                    <h3>27 Acres of Natural Beauty</h3>
+                    <p>Immerse yourself in our sprawling coffee estate, where nature's bounty awaits at every turn.</p>
+                    <div class="plantation-list">
+                        <div class="plantation-item">
+                            <i class="fas fa-coffee"></i>
+                            <span>Coffee Plantations</span>
+                        </div>
+                        <div class="plantation-item">
+                            <i class="fas fa-apple-alt"></i>
+                            <span>Avocado</span>
+                        </div>
+                        <div class="plantation-item">
+                            <i class="fas fa-pepper-hot"></i>
+                            <span>Pepper Vines</span>
+                        </div>
+                        <div class="plantation-item">
+                            <i class="fas fa-lemon"></i>
+                            <span>Mandarin Orange Trees</span>
+                        </div>
+                        <div class="plantation-item">
+                            <i class="fas fa-tree"></i>
+                            <span>Silver Oak Forests</span>
+                        </div>
+                        <div class="plantation-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>Jackfruit Orchards</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="property-image">
+                    <img src="images/property_features/plantation.jpeg" alt="Coffee Estate Plantation">
+                    <div class="image-overlay">
+                        <p>Discover the rich biodiversity of our estate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-tabs">
+                <button class="gallery-tab active" data-category="all">All</button>
+                <button class="gallery-tab" data-category="living">Living Area</button>
+                <button class="gallery-tab" data-category="rooms">Rooms</button>
+                <button class="gallery-tab" data-category="dining">Dining</button>
+                <button class="gallery-tab" data-category="outdoor">Outdoor</button>
+            </div>
+            <div class="gallery-grid">
+                <!--LIVING-->
+                <div class="gallery-item" data-category="living">
+                    <img src="images/living/hall.jpg" alt="Living Room">
+                    <div class="gallery-caption">Stone Villa</div>
+                </div>
+                <div class="gallery-item" data-category="living">
+                    <img src="images/living/hall-kitchen.jpg" alt="Hall View">
+                    <div class="gallery-caption">Stone Villa</div>
+                </div>
+                <div class="gallery-item" data-category="living">
+                    <img src="images/living/wooden-cottage-2.jpg" alt="Cottage View">
+                    <div class="gallery-caption">Wooden Cottage</div>
+                </div>
+
+                <!--ROOMS-->
+                <div class="gallery-item" data-category="rooms">
+                    <img src="images/rooms/room1.jpg" alt="Stone Villa Room 1">
+                    <div class="gallery-caption">Stone Villa Room 1</div>
+                </div>
+                <div class="gallery-item" data-category="rooms">
+                    <img src="images/rooms/room1-2.jpg" alt="Stone Villa Room 1">
+                    <div class="gallery-caption">Stone Villa Room 1</div>
+                </div>
+                <div class="gallery-item" data-category="rooms">
+                    <img src="images/rooms/room2.jpg" alt="Stone Villa Room 2">
+                    <div class="gallery-caption">Stone Villa Room 2</div>
+                </div>
+                <div class="gallery-item" data-category="rooms">
+                    <img src="images/rooms/room2-2.jpg" alt="Stone Villa Room 2">
+                    <div class="gallery-caption">Stone Villa Room 2</div>
+                </div>
+                <div class="gallery-item" data-category="rooms">
+                    <img src="images/rooms/wooden-cottage.jpg" alt="Wooden Cottage Room">
+                    <div class="gallery-caption">Wooden Cottage Room</div>
+                </div>
+                <div class="gallery-item" data-category="rooms">
+                    <img src="images/bathroom/bath_1.jpeg" alt="Bathroom">
+                    <div class="gallery-caption">Bathroom</div>
+                </div>
+                <div class="gallery-item" data-category="rooms">
+                    <img src="images/bathroom/bath_2.jpeg" alt="Bathroom">
+                    <div class="gallery-caption">Bathroom</div>
+                </div>
+                <div class="gallery-item" data-category="rooms">
+                    <img src="images/bathroom/bath_3.jpeg" alt="Bathroom">
+                    <div class="gallery-caption">Bathroom</div>
+                </div>
+                
+
+                <!--DINING-->
+                <div class="gallery-item" data-category="dining">
+                    <img src="images/dining/dining_area.jpg" alt="Dining Hall">
+                    <div class="gallery-caption">Dining Area Outdoor</div>
+                </div>
+                <div class="gallery-item" data-category="dining">
+                    <img src="images/dining/dining_area_day.jpg" alt="Dining Area Day">
+                    <div class="gallery-caption">Dining Area Outdoor</div>
+                </div>
+                <div class="gallery-item" data-category="dining">
+                    <img src="images/dining/dining_area_night.jpg" alt="Dining Hall Night">
+                    <div class="gallery-caption">Dining Area Outdoor</div>
+                </div>
+                <div class="gallery-item" data-category="dining">
+                    <img src="images/dining/dining_area_2.jpg" alt="Dining Hall Night">
+                    <div class="gallery-caption">Dining Area Outdoor</div>
+                </div>
+                
+                <!--OUTDOOR-->
+                <div class="gallery-item" data-category="outdoor">
+                    <img src="images/nature/2.jpg" alt="Sitout">
+                    <div class="gallery-caption">Sitout</div>
+                </div>
+                <div class="gallery-item" data-category="outdoor">
+                    <img src="images/nature/3.jpg" alt="Sitout">
+                    <div class="gallery-caption">Sitout</div>
+                </div>
+                <div class="gallery-item" data-category="outdoor">
+                    <img src="images/property_features/campfire.jpeg" alt="Campfire">
+                    <div class="gallery-caption">Campfire</div>
+                </div>
+                <div class="gallery-item" data-category="outdoor">
+                    <img src="images/nature/falls-1.jpg" alt="Falls">
+                    <div class="gallery-caption">Falls</div>
+                </div>
+                <div class="gallery-item" data-category="outdoor">
+                    <img src="images/nature/falls-2.jpg" alt="Falls">
+                    <div class="gallery-caption">Falls</div>
+                </div>
+                <div class="gallery-item" data-category="outdoor">
+                    <img src="images/nature/falls-3.jpg" alt="Falls">
+                    <div class="gallery-caption">Falls</div>
+                </div>
+                <div class="gallery-item" data-category="outdoor">
+                    <img src="images/nature/falls-4.jpg" alt="Falls">
+                    <div class="gallery-caption">Falls</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="amenities" class="amenities">
+        <div class="container">
+            <h2>Our Amenities</h2>
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <i class="fas fa-building"></i>
+                    <h3>Stone Villa</h3>
+                    <p>Beautiful stone villas with modern amenities</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-house"></i>
+                    <h3>Wooden Cottage</h3>
+                    <p>Cozy wooden cottages featuring contemporary comforts</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-fire"></i>
+                    <h3>Campfire</h3>
+                    <p>Warm and cozy campfire for relaxation</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-hiking"></i>
+                    <h3>Trekking</h3>
+                    <p>Explore the natural beauty of the jungle</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <form id="enquiry-form" onsubmit="submitToWhatsApp(event)">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="phone" id="phone" name="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="check-in" name="check-in" placeholder="Check-in Date" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="check-out" name="check-out" placeholder="Check-out Date" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="adults" name="adults" placeholder="Number of Adults" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="children" name="children" placeholder="Number of Children (0-12 years)" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <p style="color: #ff0000; font-weight: bold;">Note: We are not a pet-friendly establishment. No pets allowed.</p>
+                    </div>
+                    <button type="submit" class="submit-button">Send Enquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Ganeshapuram, Pethuparai, Kodaikanal Road, Perumalmalai, Tamil Nadu 624101</p>
+                    <p><i class="fas fa-phone"></i> <span id="contact-phone"></span></p>
+                    <p><i class="fas fa-envelope"></i> <span id="contact-email"></span></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rahsun Estates. All rights reserved.</p>
+                <p>Designed & Developed by <span style="display: inline-flex; align-items: center; gap: 5px;"><img src="images/logo.png" alt="SamStudios" style="height: 20px; width: auto;">SamStudios™</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <span class="prev-lightbox">&lt;</span>
+        <span class="next-lightbox">&gt;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="config.js"></script>
+    <script>
+        document.getElementById('contact-phone').textContent = window.config.contactPhone;
+        document.getElementById('contact-email').textContent = window.config.contactEmail;
+    </script>
+</body>
+</html>
