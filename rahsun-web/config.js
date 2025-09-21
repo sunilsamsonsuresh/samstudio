@@ -1,4 +1,5 @@
 window.config = {
-    contactPhone: '9000733596',
+    contactPhone1: '7994390303',
+    contactPhone2: '9048519181',
     contactEmail: 'rahsunestates@gmail.com'
 }; 

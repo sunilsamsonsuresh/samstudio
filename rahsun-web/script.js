@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const encodedMessage = encodeURIComponent(message);
             
             // Format WhatsApp number (always use 91 prefix for India)
-            const baseNumber = window.config.contactPhone.replace(/\D/g, ''); // Remove any non-digits
+            const baseNumber = window.config.contactPhone1.replace(/\D/g, ''); // Remove any non-digits
             const whatsappNumber = '91' + baseNumber;
             
             // Create the WhatsApp URL
